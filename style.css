@@ -1,0 +1,421 @@
+@charset "utf-8";
+/*reset*/
+html,body{
+    width:100%; 
+    min-height:800px; 
+    font-size:14px; 
+    margin:0;
+}
+body{font-family:'Poiret One',cursive;}
+div,h1,h2,h3,h4,h5,h6,dl,dt,dd,p,form,fieldset,select{margin:0; padding:0;}
+header,footer,section,article,address,nav{display:block; margin:0; padding:0;}
+body a{text-decoration: none; color:#000;}
+ul,ol,li{list-style:none; margin:0; padding: 0;}
+i,em,address{font-style:normal;}
+table{border-collapse:collapse; table-layout:fixed;}
+button{margin:0;background:none;border:0 none;cursor: pointer;}
+select{border:0 none;background:none;}
+
+/*Layout*/
+/*Header nav(top)*/
+header #topmenu{
+    display: flex;
+    width:1200px;
+    height: 94px;
+    overflow:hidden;
+    margin:0 auto;
+    line-height: 10;
+    border-bottom: 1px dotted #a0a0a0;
+}
+#topmenu .Ltop{
+    display:table;
+    width: 300px;
+}
+.Ltop li{
+    display: table-cell;
+    font-size: 16px;
+}
+#topmenu a{
+    width: 600px;
+    text-align: center;
+}
+#topmenu .logo{
+    margin:-131px 0;
+    font-size: 40px;
+}
+.Rtop{
+    display:table;
+    width: 300px;
+}
+.Rtop li{
+    display: table-cell;
+    text-align: end;
+    font-size: 16px;
+}
+/*Header nav(bottom)*/
+.topnav{
+    display:flex;
+    width:1200px;
+    height:77px;
+    overflow:hidden;
+    margin:0 auto;
+    line-height: 3;
+}
+.topnav ul{
+    float:left;
+    width:950px;
+}
+.topnav ul li{
+    float:left;
+    text-align: center;
+    margin:0 20px;
+    font-size: 18px;
+}
+.topnav ul .s25{
+    margin-left:0;
+}
+.topnav ul li a:hover{
+    color:#f9a964
+}
+.search{
+    position: relative;
+    width:250px;
+    margin-top: 8px;
+}
+.search input{
+    width: 200px;
+    height: 28px;
+    border: 1px solid #464646;
+    border-radius: 20px;
+    text-align: left;
+    text-indent: 15px;
+    margin-left: 22px;
+}
+.search button{
+    position: absolute;
+    left: 75%;
+    top: 18%;
+}
+/*Main slide image*/
+.mainbanner{
+    position: relative;
+    width:100%;
+    height:750px;
+    background-color: #fef5d4;
+}
+.ban_img{
+    width:1200px;
+    height:695px;
+    margin:0 auto;
+    overflow: hidden;
+}
+.ban_img li{
+    text-align: center;
+    margin-top:30px;
+}
+.ban_button{
+    position: absolute;
+    display: inline-block;
+    width:134px;
+    height:30px;
+    margin:0 auto;
+    left:46%;
+    bottom:0;
+}
+.dot{
+    float:left;
+    width:14px;
+    height:14px;
+    border:0;
+    border-radius: 10px;
+    background: #bfbfbf;
+    margin:0 6px;
+}
+/*Best Item section*/
+.best{
+    width:1200px;
+    height:478px;
+    margin: 0 auto;
+    overflow:hidden;
+}
+.best p{
+    font-size: 28px;
+    text-align:center;
+    margin:49px 0 41px;
+}
+.best .bi{
+    float:left;
+}
+.bi:nth-child(odd){
+    margin:0 18px;
+}
+.best .bi a{
+    display:block;
+}
+.best .bi span{
+    display:block;
+    color:#3d3d3d;
+    font:100 12px "Noto Sans KR";
+}
+.bi span strike{
+    color:#8d8c8c;
+    font-size: 10px;
+    margin-right: 5px;
+}
+/*Center banner*/
+.cbanner{
+    width:1200px;
+    height:570px;
+    margin:0 auto;
+    overflow: hidden;
+}
+.cbanner a{
+    float:left;
+}
+.cbanner a:nth-child(2){
+    margin:0 21px;
+}
+/*Instagram section*/
+.insta{
+    width: 100%;
+    height:1021px;
+    margin-top:70px;
+    background:#f1f0e8;
+}
+.insta p{
+    text-align:center;
+}
+.insta p:first-of-type{
+    font-size:28px;
+    padding:33px 0;
+}
+.insta p:last-of-type{
+    font:100 18px "Noto Sans KR";
+    color:#8e440e;
+    margin-bottom:25px;
+}
+.insta p span{
+    color:#585858;
+    font-size:14px;
+    padding-left:10px;
+}
+.insta_1{
+    display: flex;
+    width:1200px;
+    margin:0 auto;
+    overflow: hidden;
+    padding:32px 0 53px;
+}
+/*GATOBLANCO Instagram*/
+.insta_1 li{
+    float:left;
+    width:220px;
+}
+.insta_1 li:nth-child(2n){
+    margin:0 25px;
+}
+/*Review Instagram*/
+.insta_2{
+    width:1200px;
+    margin:0 auto;
+    overflow: hidden;
+}
+.insta_2 li{
+    float:left;
+    width:220px;
+    margin-top:25px;
+}
+.insta_2 li:nth-child(2n){
+    margin:25px 25px 0 25px;
+}
+/*Quick Menu*/
+.qmenu{
+    width:1200px;
+    height:454px;
+    overflow:hidden;
+    margin:0 auto;
+}
+.qmenu p:first-of-type{
+    height:22px;
+    text-align:center;
+    font-size:28px;
+    padding:55px 0 50px;
+}
+.q_icon{
+    display:flex;
+    width:100%;
+    height:200px;
+}
+.q_icon li{
+    float:left;
+    width:200px;
+    height:100%;
+    border:0;
+    border-radius: 100px;
+    background: #bfbfbf;
+}
+.q_icon ul li:nth-child(even){
+    margin:0 50px;
+}
+.q_icon li:hover{
+    background:#f0a023;
+    cursor: pointer;
+}
+.qmenu ul li:hover > .q_text li{
+    color:#f0a023;
+}
+.q_text li:hover{
+    background:none;
+}
+.q_icon li a{
+    display:block;
+    margin:0 auto;
+    width:88px;
+    padding-top:25%;
+}
+.q_icon li a img{
+    vertical-align: middle;
+}
+.qmenu ul li:nth-child(even){
+    margin:0 50px;
+}
+.q_text{
+    display:flex;
+    width:100%;
+    height:16px;
+    padding-top: 22px;
+}
+.q_text li{
+    float:left;
+    width:200px;
+    height:100%;
+    text-align: center;
+    font-size:24px;
+}
+/*Footer*/
+#f_menu{
+    width:100%;
+    background: #fffaea;
+}
+#f_menu .f_inner{
+    width:1200px;
+    margin:0 auto;
+    overflow:hidden;
+    color:#4f4e4f;
+}
+.f_top{
+    display:flex;
+    width:100%;
+    height:193px;
+    border-bottom:1px solid #dcdcdc;
+}
+.f_top ul{
+    float:left;
+}
+.flogo{
+    width:195px;
+    height:100%;
+    padding-top:28px;
+}
+.flogo a img{
+    padding:0 30%;
+}
+.flogo p{
+    padding-top:30px;
+    font: 400 24px "Poiret One";
+}
+.f_top ul:nth-child(n+2):nth-child(-n+4){
+    float:left;
+    width:170px;
+    height:193px;
+    padding-top:40px;
+    text-align: start;
+}
+.f_top ul:nth-child(even){
+    margin:0 26px;
+}
+.f_title{
+    font:100 18px "Poiret One";
+    margin-bottom:10px;
+}
+.f12{
+    font-weight:100;
+    margin-bottom: 5px;
+}
+.vline{
+    width:1px;
+    height:110px;
+    margin:36px 30px 46px 15px;
+}
+.f_cs{
+    width:268px;
+    height:100%;
+    margin: 0 26px;
+    padding-top:28px;
+}
+.f_btn{
+    display:flex;
+    width:100%;
+}
+.f_btn div{
+    float:left;
+    width:75px;
+    height:35px;
+    border:1px solid #3d3d3d;
+    border-radius: 5px;
+    margin-right:5px;
+}
+.f_btn a{
+    display:inline-block;
+    vertical-align: middle;
+    padding:5px 0 5px 3px;
+}
+.f_btn a img{
+    vertical-align: middle;
+}
+.f_btn:hover div{
+    background:#504c4f;
+}
+.f_btn span{
+    font:100 12px "Noto Sans KR";
+    text-align: center;
+    vertical-align: middle;
+}
+.f_btn:hover div a span{
+    color:#fffaea;
+}
+.f_number{
+    margin:3px 0;
+    font:100 15px "Poiret One";
+}
+.f_cs .f12{
+    margin-bottom:3px;
+}
+.f_bottom{
+    display:flex;
+    width:100%;
+    height:139px;
+    padding-top:36px;
+}
+.f_sns{
+    float:left;
+    width:123px;
+    height:100%;
+}
+.seller_info{
+    float:right;
+    margin-left:85px;
+}
+.seller_info ul{
+    float:left;
+    width:300px;
+}
+.seller_info ul:nth-child(2){
+    width:200px;
+}
+.seller_info .f12{
+    font-size: 12px;
+}
+.f12 b{
+    font-weight: 400;
+}
